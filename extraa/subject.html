@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="header">
+
+        <!-- Links -->
+
+
+        <!-- Navbar text-->
+        <span class="navbar-text">
+            Library Management
+        </span>
+
+    </nav>
+    <div class="container-fluid" id="body">
+        <div class="row">
+            <div class="col-md-2 px-0 border-right sidebar" id="sidebar">
+                <ul class="list-group list-group-flush">
+                    <a href="#">
+                        <li class="list-group-item">Dashboard</li>
+                    </a>
+
+                    <a href="#">
+                        <li class="list-group-item">Add Student</li>
+                    </a>
+
+                    <a href="#">
+                        <li class="list-group-item">Search Student</li>
+                    </a>
+                    <a href="#">
+                        <li class="list-group-item">Books</li>
+                    </a>
+                    <a href="#">
+                        <li class="list-group-item">Departments</li>
+                    </a>
+                    <a href="#">
+                        <li class="list-group-item">Subjects</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col-md-10">
+                <div class="body-container py-2">
+                    <div class="row border-bottom pb-2 align-items-center">
+                        <div class="col-md-6">
+                            <div class="">
+                                <h3>Subjects</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#addSubject">Add
+                                Subject</button>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <Select class="form-control" id="department" name="department">
+                                    <option value="">Select Department</option>
+                                    <option value="">Computer Engineering</option>
+                                    <option value="">Automobiles Engineering</option>
+                                </Select>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="form-group ">
+                                <div class="input-group mb-3">
+                                    <input type="search" class="form-control" placeholder="Search Subject">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa fa-search"
+                                                aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row custom-height">
+                        <div class="col-md-12 ">
+                            <table class="table table-hover border-right border-left border-bottom text-center">
+                                <thead>
+                                    <tr>
+                                        <th>S.No</th>
+                                        <th class="text-left">Subject</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="text-left">Computer Graphics</td>
+                                        <td>
+                                            <Button class="btn btn-danger btn-sm">Delete</Button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td class="text-left">Computer Network</td>
+                                        <td>
+                                            <Button class="btn btn-danger btn-sm">Delete</Button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- add department -->
+    <div class="modal" id="addSubject">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Add Subject</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="m-4">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter New Subject"
+                                            id="department" name="department">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer" id="footer">
+        footer
+    </footer>
+    <script>
+        $(document).ready(function () {
+            console.log('page loaded');
+            headerHeight = 56;
+            footerHeight = 32;
+            bodyHeight = $(window).height() - (headerHeight + footerHeight);
+            $('#sidebar').height(bodyHeight);
+        });
+    </script>
+</body>
+
+</html>

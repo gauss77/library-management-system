@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="header">
+
+        <!-- Links -->
+
+
+        <!-- Navbar text-->
+        <span class="navbar-text">
+            Library Management
+        </span>
+
+    </nav>
+    <div class="container-fluid" id="body">
+        <div class="row">
+                <div class="col-md-10">
+                    <div class="body-container py-2">
+                        <div class="row border-bottom pb-2 align-items-center">
+                            <div class="col-md-12">
+                                <div class="">
+                                    <h3>Search Student</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8">
+                                <div class="form-group ">
+                                    <div class="input-group mb-3">
+                                        <input type="search" class="form-control" placeholder="Search Student">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="fa fa-search"
+                                                    aria-hidden="true"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-5 py-2 custom-height">
+                            <div class="row">
+                                <div class="col-md-2">
+
+                                </div>
+                                <div class="col-md-8">
+                                    <div>
+                                        <h3>Student details</h3>
+                                    </div>
+                                    <div style="background: #f7f7f7ad;" class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="mb-4">
+                                                        <img width="124" height="124"
+                                                            src="https://ui-avatars.com/api/?name=Kartik+Kumar&color=7F9CF5&background=EBF4FF"
+                                                            alt="student name">
+                                                    </div>
+                                                    <div>
+                                                        <h5>Email:</h5>
+                                                        <p>ki.kartik11@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div>
+                                                        <h5>Name:</h5>
+                                                        <p>Kartik Kumar</p>
+                                                    </div>
+                                                    <div>
+                                                        <h5>Roll No:</h5>
+                                                        <p>1935052003</p>
+                                                    </div>
+                                                    <div>
+                                                        <h5>DOB:</h5>
+                                                        <p>25-09-2000</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div>
+                                                        <h5>Father's Name:</h5>
+                                                        <p>Jai Gopal Prasad</p>
+                                                    </div>
+                                                    <div>
+                                                        <h5>Department:</h5>
+                                                        <p>Computer Engineering</p>
+                                                    </div>
+                                                    <div>
+                                                        <h5>Mobile Number:</h5>
+                                                        <p>8743870095</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col-md-2">
+
+                                </div>
+                                <div class="col-md-8">
+                                    <div style="background: #f7f7f7ad;" class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h6>Assigned Books</h6>
+                                                </div>
+                                                <div class="col-md-4">
+
+                                                </div>
+                                                <div class="col-md-4 text-right">
+                                                    <a href="#" data-toggle="modal" data-target="#assignedBooks">View
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-2">
+
+                                </div>
+                                <div class="col-md-8 text-right ">
+                                    <button class="btn btn-warning">Assign Book</button>
+                                    <button class="btn btn-danger">Submit Book</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- assigned books -->
+    <div class="modal" id="assignedBooks">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Assigned Books for "Name:Roll_no"</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <table class="table table-hover border-right border-left border-bottom text-center">
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th>Book Name</th>
+                                <th>Subject</th>
+                                <th>Edition</th>
+                                <th>Assigned Date</th>
+                                <th>Price(Rs)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>programmming in java</td>
+                                <td>Java Programming</td>
+                                <td>5th</td>
+                                <td>23-04-200</td>
+                                <td>450</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer" id="footer">
+        footer
+    </footer>
+    <script>
+        $(document).ready(function () {
+            console.log('page loaded');
+            headerHeight = 56;
+            footerHeight = 32;
+            bodyHeight = $(window).height() - (headerHeight + footerHeight);
+            console.log(headerHeight, bodyHeight, footerHeight, $(window).height());
+            $('#sidebar').height(bodyHeight);
+        });
+    </script>
+</body>
+
+</html>

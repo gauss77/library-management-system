@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="header">
+        <span class="navbar-text text-light">
+            Library Management
+        </span>
+    </nav>
+    <div class="login-container" id="body">
+        <div class="login jumbotron">
+            <h3>Login</h3>
+            <form action="#" autocomplete="off">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Your Username">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Your Password">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fa fa-key" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer" id="footer">
+        footer
+    </footer>
+    <script>
+        $(document).ready(function () {
+            console.log('page loaded');
+            headerHeight = 56;
+            footerHeight = 32;
+            bodyHeight = $(window).height() - (headerHeight + footerHeight);
+            console.log(headerHeight, bodyHeight, footerHeight, $(window).height());
+            $('#body').height(bodyHeight);
+        });
+    </script>
+</body>
+
+</html>
