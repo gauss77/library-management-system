@@ -1,4 +1,4 @@
-![image](https://github.com/kartikxisk/library-management-system/assets/54768757/bbb2ec6a-ce17-411f-9cc4-7b7c60e3192f)# library-management-system
+# library-management-system
 The "Library Management System" has been developed to override the problems prevailing in the practicing manual system. This web application is supported to eliminate and in some cases reduce the hardships faced by this existing system. Moreover, this web application is designed for the particular need of the college library, university library and normal library to carry out operations in a smooth and effective manner.
 
 ### Software Requirement
